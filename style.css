@@ -1,23 +1,82 @@
+:root {
+    --main: #369369;
+    --main-d: #1D7A50;
+    --second: #336699;
+    --second-d: #1A4D80;
+    --white: #FFF;
+    --black: #000;
+    --darker: #111111;
+    --dark: #333333;
+}
+
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+    position: relative;
 }
 
 body {
 
 }
 
-nav ul {
 
+/* NAVIGATION ############################################# */
+nav {
+    background: transparent;
+    width: 100%;
 }
+
+nav.active {
+    background: var(--main);
+}
+
+nav ul {
+    width: 100%;
+    text-align: center;
+}
+
 nav ul li {
     display: inline-block;
-
+    
 }
 
-nav ul li a {
+nav ul a {
     padding: 8px 20px;
+    color: var(--white);
+    background: var(--main);
+    transition:.3s;
 }
+
+nav ul li a:hover {
+    color: var(--white);
+    background: var(--main-d);
+}
+
+
+/* FOOTER ############################################# */
+footer {
+
+}
+
+footer .footer-info {
+    background: var(--dark);
+    padding: 15px;
+}
+
+footer .footer-bottom {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: var(--darker);
+}
+
+footer .footer-bottom a,
+footer .footer-bottom {
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
